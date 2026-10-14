@@ -1,8 +1,8 @@
 /* Pile-Poil · service worker : le jeu marche hors ligne une fois ouvert.
    Change VERSION à chaque mise à jour du jeu pour forcer le rafraîchissement. */
-const VERSION = 'pilepoil-v1';
+const VERSION = 'pilepoil-v2';
 const SHELL = ['./', 'index.html', 'ads.js', 'manifest.webmanifest', 'privacy.html',
-  'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png', 'icons/favicon-32.png'];
+  'icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png', 'favicon-32.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
