@@ -1,0 +1,3 @@
+# À REMPLACER par ta ligne AdSense (Compte > Paramètres > ads.txt), puis à placer
+# à la RACINE de ton domaine : https://ton-domaine.com/ads.txt (pas dans un sous-dossier).
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
